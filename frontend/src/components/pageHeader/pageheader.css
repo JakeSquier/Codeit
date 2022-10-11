@@ -1,0 +1,83 @@
+.header-container{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    width: 98%;
+    height: 5.5vh;
+}
+
+.signup-btn{
+    height: 100%;
+    width: 85px;
+    border-radius: 7px;
+    background-color: rgb(9, 252, 86);
+    font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 15px;
+    border-style: none;
+    transition: .5s;
+}
+
+.login-btn{
+    height: 100%;
+    width: 85px;
+    border-radius: 7px;
+    background-color: rgb(68,72,87);
+    font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    transition: .5s;
+}
+
+.login-btn:hover{
+    background-color: slategray;
+}
+
+.signup-btn:hover{
+    background-color: rgb(31, 214, 89);
+    color: white;
+}
+
+.search-container{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(38,40,48);
+    border-radius: 7px 7px 7px 7px;
+}
+
+.search-input{
+    width: 100%;
+    background-color: rgb(38,40,48);
+    border-radius: 0px 7px 7px 0px;
+    color: rgb(170, 174, 188);
+    font-size: 20px;
+    border-style: none; 
+    font-family: Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+    font-weight: 550;
+    letter-spacing: .5px;
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+.search-icon{
+    border-radius: 7px 0 0 7px;
+    width: 3vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    color: rgb(134,141,159) !important;
+}

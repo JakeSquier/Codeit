@@ -1,0 +1,280 @@
+.script-project-container{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar styles below */
+
+.script-nav{
+    background-color: #060606;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+    border-bottom: solid 1px #2f2f2f;
+}
+
+.script-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.script-left > h2{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.script-left > p{
+    padding: 0;
+    margin: 0;
+    color: #9a9ead;
+    font-size: 13px;
+}
+
+.script-right{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    height: 100%;
+    width: 15%;
+    justify-content: flex-end;
+}
+
+/* page content styles below */
+
+.script-content-container{
+    display: flex;
+    flex-direction: row;
+    height: 95vw;
+    width: 100vw;
+}
+
+/* extras pane styles below */
+
+.extras-pane{
+    height: 100%;
+    width: 18vw;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+}
+
+.controls-container{
+    width: 85%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding-top: 25px;
+}
+
+.controls-container > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.execute-btn{
+    width: 65%;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    padding: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #60e576f4;
+    transition: 500ms;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'IBM plex sans', sans-serif
+}
+
+#play{
+    transition: 500ms;
+}
+
+.execute-btn:hover{
+    background-color: #439e52;
+    color: rgb(240, 240, 240);
+}
+
+.execute-btn:hover #play{
+    color: rgb(240, 240, 240) !important
+}
+
+.format-btn{
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+
+.format-btn:hover{
+    background-color: #9a9ead;
+}
+
+#format{
+    color: rgb(240, 240, 240) !important
+}
+
+#theme{
+    width: 93%;
+    height: 23px;
+    align-self: center;
+
+}
+
+#theme:focus{
+    outline: 0;
+}
+
+.theme-dropdown{
+    width: 93%;
+    height: 25px;
+}
+
+/* editor pane styles below */
+
+.script-pane{
+    height: 100%;
+    width: 45vw;
+    background-color: #060606;
+}
+
+.script-header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.script-icon{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+    background-color:#141414;
+    border-top: solid 5px #2f2f2f;
+}
+
+.script-content{
+    width: 100%;
+    height: calc(100% - 30px)
+}
+
+/* console pane styles below */
+
+.console-pane{
+    width: 34vw;
+    height: 100vh;
+    background-color: #060606;
+    display: flex;
+    flex-direction: column;
+}
+
+.output-header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.output-icon{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+    background-color:#141414;
+    border-top: solid 5px #2f2f2f;
+}
+
+.console-container{
+    width: 92%;
+    height: calc(87.5% - 30px);
+    background-color: #141414;
+    border-radius: 0 10px 10px 0;
+    align-self: flex-start;
+    padding: 10px 15px 15px 15px;
+    display: flex;
+}
+
+#terminal{
+    color: rgb(0, 164, 0) !important
+}
+
+#errorText{
+    color: #ff2626;
+}
+
+#outputText{
+    color: white;
+}
+
+/* resize bar styles below */
+
+.resize-bar{
+    background-color:#060606;
+    border-left: solid 1px #2f2f2f;
+    border-right: solid 1px #2f2f2f;
+    width: 1.5vw;
+}
+
+/* spinner styles below */
+.spinner {
+    align-self: center;
+    margin-left: 45%;
+    color: rgb(0, 164, 0);
+  
+}
+  
+.spinner:after {
+
+    animation: change .8s linear infinite;
+
+    content: "⠋";
+
+    font-size: 80px;
+
+}
+  
+  @keyframes change {
+  
+    10% { content: "⠙"; }
+  
+    20% { content: "⠹"; }
+  
+    30% { content: "⠸"; }
+  
+    40% { content: "⠼"; }
+  
+    50% { content: "⠴"; }
+  
+    60% { content: "⠦"; }
+  
+    70% { content: "⠧"; }
+  
+    80% { content: "⠇"; }
+  
+    90% { content: "⠏"; }
+  
+  }

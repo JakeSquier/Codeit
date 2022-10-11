@@ -1,0 +1,251 @@
+.web-page-container{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav area */
+
+.web-nav{
+    background-color: #060606;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+}
+
+.web-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.web-left > h2{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.web-left > p{
+    padding: 0;
+    margin: 0;
+    color: #9a9ead;
+    font-size: 13px;
+}
+
+.web-right{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    height: 100%;
+    width: 15%;
+    justify-content: flex-end;
+}
+
+#web-save-btn{
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: #444857;
+  transition: .3s;
+}
+
+#web-save-btn:hover{
+    background-color: #9a9ead;
+}
+
+#web-profile-btn{
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #9a9ead;
+}
+
+/* editor area */
+
+.editor-container{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 100%;
+}
+
+.input-container{
+    background-color: #060606;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editors{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-top: solid 1px #2f2f2f;
+    overflow: hidden;
+}
+
+#paneOne{
+    width: 31.33vw;
+    height: 100%;
+}
+
+#paneTwo{
+    width: 31.33vw;
+}
+
+#paneThree{
+    width: 31.33vw;
+}
+
+.editor-header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.editor-icon{
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3px;
+    padding-left: 5px;
+    padding-right: 10px;
+    background-color:#141414;
+    border-top: solid 5px #2f2f2f;
+}
+
+.editor-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3px;
+}
+
+.format-web-btn{
+    border: none;
+    background-color: #444857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5em;
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#formatWeb{
+    color: white !important
+}
+
+.format-web-btn:hover{
+    background-color: #aaaebc;
+    transform: scale(1.05);
+}
+
+.settings-web-btn{
+    border: none;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+#settings{
+    color: #444857 !important;
+    transition: .5s;
+}
+
+.settings-web-btn:hover #settings{
+    color: #aaaebc !important;
+    transform: scale(1.1);
+    transform: rotate(30deg);
+}
+
+.editor-title {
+    color:#aaaebc;
+}
+
+#html{
+    color: red !important
+}
+
+#css{
+    color:#10beff !important
+}
+
+#js{
+    color:#fcd100 !important
+}
+
+.editor-content{
+    width: 100%;
+    height: calc(100% - 30px)
+}
+
+.editor-resize{
+    height: 20px;
+    background-color:#060606;
+    cursor: row-resize;
+    border: solid 1px #2f2f2f;
+}
+
+.resize-pane{
+    background-color:#060606;
+    border-left: solid 1px #2f2f2f;
+    border-right: solid 1px #2f2f2f;
+    width: 1.5vw;
+}
+
+#resizeOne{
+    cursor: col-resize;
+}
+
+#resizeTwo{
+    cursor: col-resize;
+}
+
+/* output area */
+
+.output-container{
+    flex: 1;
+}
+
+/* modal styles */
+
+.web-modal{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0, 0.4); /* Fallback color */
+}
+
+.web-modal-content{
+    position: fixed;
+    left: 37.5%;
+    top: 30%;
+    height: 40%;
+    width: 25%;
+    background-color: #444857;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
